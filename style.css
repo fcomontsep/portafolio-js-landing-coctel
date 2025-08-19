@@ -107,6 +107,13 @@ body {
 		--clip: 0;
 		overflow: hidden;
 	}
+	.menu-item--active {
+		--transform: rotate(0);
+		--background: #5e5e5e;
+	}
+	.menu-item--show {
+		background-color: var(--background);
+	}
 	.menu-links {
 		position: fixed;
 		max-width: 400px;
@@ -118,6 +125,11 @@ body {
 		overflow-y: auto;
 		display: grid;
 		grid-auto-rows: max-content;
+		transform: translateX(100%);
+	}
+	.menu-links--show {
+		transform: unset;
+		width: 100%;
 	}
 	.menu-link {
 		padding: 25px 0;
