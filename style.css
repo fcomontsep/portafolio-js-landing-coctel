@@ -84,3 +84,62 @@ body {
 	padding: 30px 100px 30px 20px;
 	background-color: #798499;
 }
+
+.menu-hamburger {
+	height: 100;
+	display: flex;
+	align-items: center;
+	padding: 0 15px;
+	cursor: pointer;
+	display: none;
+}
+
+.menu-img {
+	display: block;
+	width: 36px;
+}
+
+@media (max-width: 800px) {
+	.menu-hamburger {
+		display: flex;
+	}
+	.menu-item {
+		--clip: 0;
+		overflow: hidden;
+	}
+	.menu-links {
+		position: fixed;
+		max-width: 400px;
+		width: 100%;
+		top: 70px;
+		bottom: 0;
+		right: 0;
+		background-color: #000;
+		overflow-y: auto;
+		display: grid;
+		grid-auto-rows: max-content;
+	}
+	.menu-link {
+		padding: 25px 0;
+		padding-left: 30px;
+		display: flex;
+		height: auto;
+	}
+	.menu-arrow {
+		margin-left: auto;
+		margin-right: 20px;
+	}
+	.menu-nesting {
+		display: grid;
+		position: unset;
+		width: 100%;
+		transform: translateY(0);
+		height: 0;
+		transition: height 0.3s;
+	}
+	.menu-link--inside {
+		width: 90%;
+		margin-left: auto;
+		border-left: 1px solid #798499;
+	}
+}
