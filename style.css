@@ -4,6 +4,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	color: #2f2e41;
 }
 
 body {
@@ -435,7 +436,8 @@ body {
 .auto-carousel {
 	overflow-x: hidden;
 	position: relative;
-	margin: -2.5em 0;
+	margin-top: -2.5em;
+	margin-bottom: -7.5em;
 	width: 98vw;
 	height: 40em;
 }
@@ -462,6 +464,9 @@ body {
 }
 
 @media screen and (max-width: 1100px) {
+	.auto-carousel {
+		margin-bottom: -15em;
+	}
 	.carousel-container {
 		width: 266.5%;
 	}
@@ -484,4 +489,100 @@ body {
 	.carousel-container {
 		width: 750%;
 	}
+}
+
+
+/* ---- NOSOTROS ----*/
+
+.nosotros {
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	margin-bottom: -100px;
+}
+.nosotros h1 {
+	font-size: 36px;
+	font-weight: 600;
+}
+.nosotros p {
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+}
+.nosotros-col {
+	flex-basis: 49%;
+	background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+.row {
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+h3 {
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+}
+
+@media (max-width: 700px) {
+	.row {
+		flex-direction: column;
+	}
+}
+
+
+/* ---- REPARTO ----*/
+
+.reparto {
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+.reparto-col {
+	flex-basis: 49%;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	text-align: left;
+}
+.reparto-col img {
+	width: 100%;
+	border-radius: 10px;
+}
+.reparto-col p {
+	padding: 0;
+	text-align: justify;
+}
+.reparto-col h3 {
+	margin-top: 16px;
+	margin-bottom: 15px;
+	text-align: left;
+}
+
+
+/* ---- PIE DE PÁGINA ----*/
+
+.footer {
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
+}
+.footer h4 {
+	margin-top: 20px;
+	font-weight: 600;
+}
+.footer p {
+	margin-bottom: 25px;
+}
+.icons .fa {
+	color: #fda085;
+	margin: 0 13px;
+	cursor: pointer;
+	padding: 18px 0,
 }
