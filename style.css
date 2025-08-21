@@ -435,41 +435,38 @@ body {
 .auto-carousel {
 	overflow-x: hidden;
 	position: relative;
-	margin: 2em 0;
-	width: 100vw;
-	height: 20em;
+	margin: -2.5em 0;
+	width: 98vw;
+	height: 40em;
 }
 
 .carousel-container {
-	background: #e6e6e6;
 	position: absolute;
 	top: 0;
 	left: 0;
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);
 	align-items: center;
-	width: 200%;
-	height: 100%;
 }
 
-.slide {
-	height: 100%;
+.carousel-slide {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	padding: 1em;
+	padding: 4.15em;
 }
 
-.slide img {
-	height: 32em;
-	width: 100%;
-	object-fit: cover;
+.carousel-img {
+	border-radius: 12px;
 }
 
 @media screen and (max-width: 1100px) {
 	.carousel-container {
 		width: 266.5%;
+	}
+	.carousel-img {
+		width: 150%;
 	}
 }
 
@@ -477,10 +474,14 @@ body {
 	.carousel-container {
 		width: 400%;
 	}
+	
+	.carousel-img {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 600px) {
 	.carousel-container {
-		width: 800%;
+		width: 750%;
 	}
 }

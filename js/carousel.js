@@ -1,5 +1,5 @@
 const container = document.querySelector(".carousel-container");
-const slides = document.querySelectorAll(".slide");
+const slides = document.querySelectorAll(".carousel-slide");
 
 let offset = 0;
 let slideId = 0;
